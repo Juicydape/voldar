@@ -11,6 +11,18 @@
 	// 		background-image: url(../img/hero-image-fhd.jpg);
 	// 	}
 
+	.about-us {
+		height: 85vh;
+		&__content {
+			font-size: 1.2rem;
+		}
+		&__refcontact {
+			left: 50%;
+			margin-top: 3em;
+			// width: 25%;
+		}
+	}
+
 	.contact {
 		height: 100vh;
 		&__box {
