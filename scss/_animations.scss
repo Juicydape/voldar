@@ -1,0 +1,34 @@
+@keyframes navItemsAnimation {
+	from {
+		transform: translateX(200%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes navSymbolsAnimation {
+	from {
+		transform: rotate(8deg);
+	}
+	to {
+		transform: rotate(368deg);
+	}
+}
+
+@keyframes navSymbolsAnimation2 {
+	from {
+		transform: rotate(60deg);
+	}
+	to {
+		transform: rotate(420deg);
+	}
+}
+@keyframes navSymbolsAnimation3 {
+	from {
+		transform: rotate(200deg);
+	}
+	to {
+		transform: rotate(560deg);
+	}
+}

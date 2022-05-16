@@ -1,0 +1,51 @@
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 3rem;
+	}
+	.nav {
+		&__animated-symbol {
+			display: inline;
+		}
+	}
+	// 	.header {
+	// 		background-image: url(../img/hero-image-fhd.jpg);
+	// 	}
+
+	.contact {
+		height: 100vh;
+		&__box {
+			position: absolute;
+			top: 35%;
+			left: 0;
+			width: 50%;
+		}
+
+		&__detail-header {
+			padding: 0.6em 1.4em;
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+		&__detail-info {
+			padding: 0.2em 0.6em;
+		}
+
+		&__map {
+			display: block;
+		}
+	}
+
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 25vh;
+		&__bottom-text {
+			font-size: 2rem;
+		}
+		&__made-by {
+			font-size: 0.8rem;
+		}
+	}
+}
