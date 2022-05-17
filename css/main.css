@@ -7,7 +7,6 @@ a {
 	width: 100%;
 	max-width: 1200px;
 }
-
 .section-heading {
 	display: block;
 	padding: 1em 2em;
@@ -2009,7 +2008,7 @@ body {
 		grid-template-columns: repeat(5, 1fr);
 	}
 	.gallery img {
-		height: 300px;
+		height: 250px;
 	}
 	.gallery img:nth-child(odd) {
 		display: inline;
