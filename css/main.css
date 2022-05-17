@@ -10,7 +10,7 @@ a {
 
 .section-heading {
 	display: block;
-	padding: 1.8em 2.6em;
+	padding: 1em 2em;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.6rem;
@@ -2001,10 +2001,7 @@ body {
 	.about-us__content {
 		font-size: 1.2rem;
 	}
-	.about-us__refcontact {
-		left: 50%;
-		margin-top: 3em;
-	}
+
 	.gallery {
 		/* -ms-grid-rows: (1fr)[2]; */
 		grid-template-rows: repeat(2, 1fr);
