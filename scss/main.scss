@@ -199,9 +199,14 @@ body {
 		display: block;
 		padding: 0.5em 1.5em;
 		font-size: 0.8rem;
+
+		&:last-of-type {
+			margin-bottom: 2em;
+		}
 	}
 	&__refcontact {
 		display: block;
+		align-items: end;
 		// position: absolute;
 		width: 100%;
 		padding: 1em 2em;
@@ -255,7 +260,17 @@ body {
 //
 
 .gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	height: 75vh;
+	img {
+		height: 250px;
+		width: 100%;
+		object-fit: cover;
+		&:nth-child(odd) {
+			display: none;
+		}
+	}
 }
 
 //

@@ -23,6 +23,17 @@
 		}
 	}
 
+	.gallery {
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(5, 1fr);
+		img {
+			height: 300px;
+			&:nth-child(odd) {
+				display: inline;
+			}
+		}
+	}
+
 	.contact {
 		height: 100vh;
 		&__box {
