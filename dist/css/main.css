@@ -1264,8 +1264,7 @@ body {
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 75vh;
-  min-height: 500px;
+  height: 500px;
 }
 .gallery img {
   height: 250px;
