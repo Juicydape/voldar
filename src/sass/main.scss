@@ -1,0 +1,367 @@
+// IMPORTS
+
+@import 'colors';
+@import 'components';
+@import 'animations';
+@import 'hamburgers';
+
+//MOBILE VERSION
+//GENERAL CLASSES
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	width: 100%;
+	background-color: $main-color;
+	color: $pure-white;
+	overflow-x: hidden;
+}
+
+//
+//NAV
+//
+
+.nav {
+	.hamburger {
+		position: fixed;
+		top: 25px;
+		right: 10px;
+		z-index: 10;
+	}
+
+	&__mobile {
+		position: fixed;
+		display: flex;
+		top: 0;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		background-color: $main-color;
+		z-index: 9;
+		transform: translateX(120%);
+		transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+		&--active {
+			transform: translateX(0%);
+		}
+	}
+
+	&__mobile-heading {
+		position: absolute;
+		top: 30px;
+		font-family: 'Dancing Script', cursive;
+		text-align: center;
+		color: $pure-white;
+		font-size: 3rem;
+	}
+
+	&__item {
+		display: block;
+		position: relative;
+		padding: 1em 2em;
+		font-size: 2rem;
+		font-weight: bold;
+		color: $pure-white;
+		transition: color 0.5s;
+		&:hover {
+			color: $marigold;
+		}
+	}
+
+	&__animated-symbol {
+		display: none;
+		position: absolute;
+		font-size: 8rem;
+		color: rgba(0, 0, 0, 0.3);
+		cursor: default;
+
+		&--one {
+			top: 19%;
+			right: 13%;
+			animation: navSymbolsAnimation 400s infinite;
+		}
+		&--two {
+			bottom: 22%;
+			left: 3%;
+			animation: navSymbolsAnimation2 260s infinite reverse;
+		}
+		&--three {
+			top: 7%;
+			left: 30%;
+			animation: navSymbolsAnimation3 80s infinite reverse;
+		}
+		&--four {
+			bottom: 19%;
+			right: 19%;
+			animation: navSymbolsAnimation 110s infinite;
+		}
+		&--five {
+			top: 50%;
+			left: 29%;
+			animation: navSymbolsAnimation2 180s infinite;
+		}
+		&--six {
+			bottom: 3%;
+			right: 8%;
+			animation: navSymbolsAnimation3 290s infinite reverse;
+		}
+		&--seven {
+			top: 4%;
+			right: 35%;
+			animation: navSymbolsAnimation 330s infinite reverse;
+		}
+		&--eight {
+			bottom: 2%;
+			left: 49%;
+			animation: navSymbolsAnimation2 291s infinite;
+		}
+		&--nine {
+			top: 3%;
+			left: 6%;
+			animation: navSymbolsAnimation3 155s infinite;
+		}
+	}
+}
+
+.nav-items-animation {
+	animation: navItemsAnimation 1s both;
+}
+
+//
+// END OF NAV
+//
+
+//
+// HEADER
+//
+.header {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	background-image: url(../img/hero-image-mobile.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	&__hero {
+		position: absolute;
+		height: 100vh;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		// background-color: #000002e7;
+		background-color: #0e1428e7;
+	}
+
+	&__heading {
+		font-family: 'Dancing Script', cursive;
+		font-size: 4rem;
+	}
+
+	&__info {
+		padding: 0.3em 2em;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+}
+
+//
+//END OF HEADER
+//
+
+//
+//ABOUT-US
+//
+
+.about-us {
+	position: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 60vh;
+	min-height: 600px;
+
+	&__content {
+		display: block;
+		padding: 0.5em 1.5em;
+		font-size: 0.8rem;
+
+		&:last-of-type {
+			margin-bottom: 2em;
+		}
+	}
+	&__refcontact {
+		display: block;
+		align-items: end;
+		// position: absolute;
+		width: 100%;
+		padding: 1em 2em;
+		background-color: $marigold;
+		bottom: 10%;
+		color: $pure-white;
+		font-weight: bold;
+		text-align: center;
+		&:hover {
+			color: $main-color;
+		}
+	}
+}
+
+//
+//END OF ABOUT-US
+//
+
+//
+//OFFER
+//
+
+.offer {
+	height: 100vh;
+	background-color: $pure-white;
+	color: $main-color;
+
+	&__card-container {
+		display: block;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__offer-card {
+		height: 70vh;
+		border: 1px solid #333333af;
+		border-radius: 4px;
+	}
+
+	.wrapper {
+		display: grid;
+	}
+}
+
+//
+//END OF OFFER
+//
+
+//
+//GALLERY
+//
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 75vh;
+	min-height: 500px;
+	img {
+		height: 250px;
+		width: 100%;
+		object-fit: cover;
+		&:nth-child(odd) {
+			display: none;
+		}
+	}
+}
+
+//
+//END OF GALLERY
+//
+
+//
+//CONTACT
+//
+
+.contact {
+	position: relative;
+	height: 60vh;
+	background-color: $marigold;
+	color: $main-color;
+
+	&__map {
+		display: none;
+		position: absolute;
+		top: 25%;
+		right: 10%;
+		// border: 1px solid $main-color;
+	}
+
+	&__box {
+		position: absolute;
+		top: 35%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__detail-info {
+		margin-top: 0.5em;
+	}
+
+	&__detail-icon {
+		transform: translateY(25%);
+	}
+
+	&__phone-now {
+		padding: 1em 2em;
+		margin-top: 1em;
+		border-radius: 4px;
+		background-color: $main-color;
+		color: $pure-white;
+		transition: color 0.3s;
+		&:hover {
+			color: $marigold;
+		}
+	}
+}
+
+//
+//END OF CONTACT
+//
+
+//
+//FOOTER
+//
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 25vh;
+	background-color: $main-color;
+	color: $pure-white;
+
+	&__company-name {
+		padding: 0em 0.1em;
+		// // font-family: 'Dancing Script', cursive;
+		// font-size: 2.5rem;
+	}
+	&__bottom-text {
+		font-size: 1.3rem;
+	}
+	&__made-by {
+		font-size: 0.8rem;
+	}
+}
+
+// MEDIA QUERIES
+
+@import 'small';
+@import 'medium';
+@import 'large';
+
+/* another font
+ font-family: 'Water Brush', cursive;
+*/
