@@ -233,21 +233,14 @@ body {
 	height: 100vh;
 	background-color: $pure-white;
 	color: $main-color;
-
-	&__card-container {
-		display: block;
-		justify-content: center;
-		align-items: center;
-	}
-
-	&__offer-card {
-		height: 70vh;
-		border: 1px solid #333333af;
-		border-radius: 4px;
-	}
-
-	.wrapper {
-		display: grid;
+	&__item {
+		padding: 0.8em 1.6em;
+		margin: 0.3em;
+		border-radius: 10px;
+		background-color: $main-color;
+		color: $pure-white;
+		font-size: 0.8rem;
+		// line-height: 1.4rem;
 	}
 }
 
