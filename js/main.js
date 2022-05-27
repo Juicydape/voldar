@@ -14,6 +14,10 @@ const handleNavItemsAnimation = () => {
 	let delayTime = 0
 
 	navItem.forEach(item => {
+		item.addEventListener(`click`, () => {
+			navMobile.classList.remove(`nav__mobile--active`)
+			burgerBtn.classList.toggle(`is-active`)
+		})
 		item.classList.toggle('nav-items-animation')
 		item.style.animationDelay = '.' + delayTime + 's'
 		delayTime++
