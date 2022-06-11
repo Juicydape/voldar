@@ -2,6 +2,7 @@ const burgerBtn = document.querySelector('.hamburger')
 const navMobile = document.querySelector('.nav__mobile')
 const navItem = document.querySelectorAll('.nav__item')
 const footerYear = document.querySelector('.footer__year')
+const hamburgerInner = document.querySelector(`.hamburger-inner`)
 
 const handleNav = () => {
 	burgerBtn.classList.toggle('is-active')
