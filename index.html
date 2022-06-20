@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@200;400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@200;300;400;700&display=swap"
         rel="stylesheet">
 
 
@@ -44,8 +44,15 @@
     <header id="header" class="header">
         <div class="header__title">
             <h1 class="header__heading"><span class="first-letter">V</span>oldar</h1>
-            <p class="header__info">Dariusz Gryt</p>
-            <p class="header__info"><strong>Instalacje elektryczne Jastrzębie-Zdrój</strong></p>
+            <p class="header__info header__info--name">Dariusz Gryt</p>
+            <p class="header__info"><strong>Instalacje elektryczne <br>Jastrzębie-Zdrój</strong></p>
+            <a class="header__link" href="#about-us">
+                <Div class="scroll-down">
+                </Div>
+                <Div class="scroll-down scroll-down--upper">
+                </Div>
+            </a>
+
         </div>
     </header>
 
@@ -74,50 +81,55 @@
         <section id="offer" class="offer">
             <h2 class="section-heading">W ramach działalności wykonuję instalacje:</h2>
             <div class="wrapper">
-                <!-- <p class="offer__item">W ramach działaności wykonuję instalacje:</p> -->
-                <p class="offer__item">domofonowe i wideodomofonowe</p>
-                <p class="offer__item">odgromowe</p>
-                <p class="offer__item">alarmowe</p>
-                <p class="offer__item">kontroli i dostępu</p>
-                <p class="offer__item">monitoringu</p>
-                <p class="offer__item">systemów przeciwpożarowych</p>
-                <p class="offer__item">bram wjazdowych i garażowych</p>
-                <p class="offer__item">modernizacje, wymiany i konserwacje instalacji elektrycznych</p>
+                <div class="offer__flex">
+                    <div class="offer__flex-column">
+                        <p class="offer__item">domofonowe i wideodomofonowe</p>
+                        <p class="offer__item">odgromowe</p>
+                        <p class="offer__item">alarmowe</p>
+                        <p class="offer__item">kontroli i dostępu</p>
+                    </div>
+                    <div class="offer__flex-column">
+                        <p class="offer__item">monitoringu</p>
+                        <p class="offer__item">systemów przeciwpożarowych</p>
+                        <p class="offer__item">bram wjazdowych i garażowych</p>
+                        <p class="offer__item">modernizacje, wymiany i konserwacje instalacji elektrycznych</p>
+                    </div>
+                </div>
             </div>
 
 
         </section>
         <section id="gallery" class="gallery">
-            <!-- <h2 class="section-heading">Galeria</h2> -->
-            <img src="./img/offer/domofon-2.jpg" alt="">
-            <img src="./img/offer/domofon.jpg" alt="">
-            <img src="./img/offer/esy.jpg" alt="">
-            <img src="./img/offer/esy2.jpg" alt="">
-            <img src="./img/offer/kamera.jpg" alt="">
-            <img src="./img/offer/mróz.jpg" alt="">
-            <img src="./img/offer/piorun.jpg" alt="">
-            <img src="./img/offer/pomiar.jpg" alt="">
-            <img src="./img/offer/ppoz.jpg" alt="">
-            <img src="./img/offer/puszka-w-scianie.jpg" alt="">
-            <!-- <img src="./img/offer/wideodomofon.jpg" alt=""> -->
+            <img src="./dist/img/offer/domofon-2.jpg" alt="">
+            <img src="./dist/img/offer/domofon.jpg" alt="">
+            <img src="./dist/img/offer/esy.jpg" alt="">
+            <img src="./dist/img/offer/esy2.jpg" alt="">
+            <img class='br-1' src="./dist/img/offer/kamera.jpg" alt="">
+            <img class='br-1' src="./dist/img/offer/mróz.jpg" alt="">
+            <img class='br-2' src="./dist/img/offer/piorun.jpg" alt="">
+            <img class='br-2' src="./dist/img/offer/pomiar.jpg" alt="">
+            <img class='br-3' src="./dist/img/offer/ppoz.jpg" alt="">
+            <img class='br-3' src="./dist/img/offer/puszka-w-scianie.jpg" alt="">
         </section>
         <section id="contact" class="contact">
             <div class="wrapper">
                 <h2 class="section-heading">Kontakt</h2>
-                <div class="contact__box">
-                    <h3 class="contact__detail-header">Dariusz Gryt</h3>
-                    <p class="contact__detail-info">ul.Pomorska 35/13</p>
-                    <p class="contact__detail-info">44-335 Jastrzębie-Zdrój</p>
-                    <!-- <p class="contact__detail-info">Polska</p> -->
-                    <p class="contact__detail-info"><img class='contact__detail-icon'
-                            src="../voldar-dariusz-gryt/img/icons/phone.svg" alt=""> 602
-                        451 550</p>
-                    <a href="tel:+48-602-451-550" class="contact__phone-now">Zadzwoń teraz!</a>
+                <div class="contact__flex">
+                    <div class="contact__flex-column contact__box">
+                        <h3 class="contact__detail-header">Dariusz Gryt</h3>
+                        <p class="contact__detail-info">ul.Pomorska 35/13</p>
+                        <p class="contact__detail-info">44-335 Jastrzębie-Zdrój</p>
+                        <p class="contact__detail-info"><img class='contact__detail-icon'
+                                src="../voldar-dariusz-gryt/img/icons/phone.svg" alt=""> 602
+                            451 550</p>
+                        <a href="tel:+48-602-451-550" class="contact__phone-now">Zadzwoń teraz!</a>
+                    </div>
+                    <div class="contact__flex-column contact__flex-column--map">
+                        <iframe class="contact__map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.644849347004!2d18.599118724183178!3d49.94300492318953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47115391dbe09f87%3A0x52ccece2ef7e6bfa!2sVoldar%20Instalacje%20Elektryczne%20Dariusz%20Gryt!5e0!3m2!1spl!2spl!4v1652001493224!5m2!1spl!2spl"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <iframe class="contact__map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.644849347004!2d18.599118724183178!3d49.94300492318953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47115391dbe09f87%3A0x52ccece2ef7e6bfa!2sVoldar%20Instalacje%20Elektryczne%20Dariusz%20Gryt!5e0!3m2!1spl!2spl!4v1652001493224!5m2!1spl!2spl"
-                    width="45%" height="65%" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
@@ -127,7 +139,7 @@
                 Voldar </span> Dariusz Gryt</p>
         <p class="footer__made-by">Wykonanie: Piotr Materna.</p>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./dist/js/main.js"></script>
 </body>
 
 </html>

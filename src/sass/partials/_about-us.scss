@@ -1,0 +1,22 @@
+.about-us {
+	&__content {
+		padding: 0.3em 0.6em;
+		line-height: 1.6em;
+	}
+
+	&__refcontact {
+		display: block;
+
+		margin: 2em 0 0 0;
+		padding: 1em 0.6em;
+		font-weight: bold;
+		text-align: center;
+		background-color: var(--pure-black);
+		color: var(--pure-white);
+		transition: color 0.3s;
+
+		&:hover {
+			color: var(--sandy-brown);
+		}
+	}
+}

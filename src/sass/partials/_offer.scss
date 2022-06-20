@@ -1,0 +1,23 @@
+.offer {
+	&__flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__item {
+		padding: 1em 2em;
+		text-transform: uppercase;
+		font-weight: 300;
+		text-align: center;
+	}
+}
+
+@media (min-width: 992px) {
+	.offer {
+		&__flex {
+			flex-direction: row;
+		}
+	}
+}

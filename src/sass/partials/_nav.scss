@@ -1,0 +1,106 @@
+.nav {
+	.hamburger {
+		position: fixed;
+		top: 25px;
+		right: 10px;
+		z-index: 10;
+	}
+
+	&__mobile {
+		position: fixed;
+		display: flex;
+		top: 0;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		background-color: var(--certain-grey);
+		z-index: 9;
+		transform: translateX(120%);
+		transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+		&--active {
+			transform: translateX(0%);
+		}
+	}
+
+	&__mobile-heading {
+		position: absolute;
+		top: 30px;
+		font-family: 'Dancing Script', cursive;
+		text-align: center;
+		color: var(--pure-white);
+		font-size: 3rem;
+	}
+
+	&__item {
+		display: block;
+		position: relative;
+		padding: 1em 2em;
+		font-size: 2rem;
+		font-weight: bold;
+		color: var(--pure-white);
+		transition: color 0.5s;
+		&:hover {
+			color: var(--sandy-brown);
+		}
+	}
+
+	&__animated-symbol {
+		display: block;
+		position: absolute;
+		font-size: clamp(4rem, 1.4286rem + 11.4286vw, 10rem);
+		color: rgba(0, 0, 0, 0.3);
+		cursor: default;
+
+		&--one {
+			top: 19%;
+			right: 13%;
+			animation: navSymbolsAnimation 400s infinite;
+		}
+		&--two {
+			bottom: 22%;
+			left: 3%;
+			animation: navSymbolsAnimation2 260s infinite reverse;
+		}
+		&--three {
+			top: 7%;
+			left: 30%;
+			animation: navSymbolsAnimation3 80s infinite reverse;
+		}
+		&--four {
+			bottom: 19%;
+			right: 19%;
+			animation: navSymbolsAnimation 110s infinite;
+		}
+		&--five {
+			top: 50%;
+			left: 29%;
+			animation: navSymbolsAnimation2 180s infinite;
+		}
+		&--six {
+			bottom: 3%;
+			right: 8%;
+			animation: navSymbolsAnimation3 290s infinite reverse;
+		}
+		&--seven {
+			top: 4%;
+			right: 35%;
+			animation: navSymbolsAnimation 330s infinite reverse;
+		}
+		&--eight {
+			bottom: 2%;
+			left: 49%;
+			animation: navSymbolsAnimation2 291s infinite;
+		}
+		&--nine {
+			top: 3%;
+			left: 6%;
+			animation: navSymbolsAnimation3 155s infinite;
+		}
+	}
+}
+
+.nav-items-animation {
+	animation: navItemsAnimation 1s both;
+}

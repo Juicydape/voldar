@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: var(--main-font);
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section-heading {
+	display: block;
+	padding: 1.8em 2.6em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--blue-sapphire);
+	font-size: clamp(1.6rem, 1.3818rem + 1.0909vw, 2.2rem);
+}
+
+.first-letter {
+	color: var(--sandy-brown);
+}
